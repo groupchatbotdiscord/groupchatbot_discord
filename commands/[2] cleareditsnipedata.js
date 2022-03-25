@@ -11,6 +11,6 @@ module.exports = {
         functions.writeJSON("groups", message.channel.id, null, "delete file.editSnipeData[path]")
         functions.writeJSON("editsnipe", message.channel.id, null, "delete file[path]")
 
-        message.reply(`Cleared \`!editsnipe\`/\`!editsnipelogs\` data.`)
+        message.reply(`Cleared \`${functions.configJSON.prefix}editsnipe\`/\`${functions.configJSON.prefix}editsnipelogs\` data.`)
     }
 }

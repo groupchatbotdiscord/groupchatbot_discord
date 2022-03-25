@@ -23,10 +23,10 @@ module.exports = {
             message.reply(`You need to @mention someone to use this command.
 
             **Usage**
-            !unblacklist <@user>
+            ${functions.configJSON.prefix}unblacklist <@user>
 
             **Example**
-            !unblacklist ${message.author}`)
+            ${functions.configJSON.prefix}unblacklist ${message.author}`)
         }
     }
 }

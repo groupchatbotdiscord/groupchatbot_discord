@@ -10,7 +10,7 @@ function getMenu(message) {
     const autoEditSnipe = functions.readJSON("groups")[message.channel.id].autoEditSnipe
 
     return `**Snipe/Editsnipe** - ID: \`snipe\`
-    Allows group members to use the \`!snipe\` and \`!editsnipe\` commands.
+    Allows group members to use the \`${functions.configJSON.prefix}snipe\` and \`${functions.configJSON.prefix}editsnipe\` commands.
     ${snipe === true ? "✅" : "❌"} \`${snipe === true ? "Enabled" : "Disabled"}\`
 
     **Non-Prefix Commands** - ID: \`nonprefixcommands\`, \`npc\`
@@ -28,16 +28,16 @@ function getMenu(message) {
     ${rareEvents === true ? "✅" : "❌"} \`${rareEvents === true ? "Enabled" : "Disabled"}\`
 
     **Auto Snipe** - ID: \`autosnipe\`, \`as\`
-    Allows the bot to automatically use \`!snipe\` upon message deletion.
+    Allows the bot to automatically use \`${functions.configJSON.prefix}snipe\` upon message deletion.
     ${autoSnipe === true ? "✅" : "❌"} \`${autoSnipe === true ? "Enabled" : "Disabled"}\`
 
     **Auto Editsnipe** - ID: \`autoeditsnipe\`, \`aes\`
-    Allows the bot to automatically use \`!editsnipe\` upon message edit.
+    Allows the bot to automatically use \`${functions.configJSON.prefix}editsnipe\` upon message edit.
     ${autoEditSnipe === true ? "✅" : "❌"} \`${autoEditSnipe === true ? "Enabled" : "Disabled"}\`
 
-    • To change a setting type \`!groupsettings [ID] [value]\`.
-    • To reset all settings back to their default value type \`!groupsettings reset\`.
-    • Example: \`!groupsettings snipe disable\`.`
+    • To change a setting type \`${functions.configJSON.prefix}groupsettings [ID] [value]\`.
+    • To reset all settings back to their default value type \`${functions.configJSON.prefix}groupsettings reset\`.
+    • Example: \`${functions.configJSON.prefix}groupsettings snipe disable\`.`
 }
 
 function isValidValue(value = "") {

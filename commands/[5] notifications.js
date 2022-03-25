@@ -60,7 +60,7 @@ async function getPage(client, message, logs, currentPage) {
 module.exports = {
     name: "notifications",
     description: `View your notifications.
-    Use !notifications clear to clear your notifications.`,
+    Use ${functions.configJSON.prefix}notifications clear to clear your notifications.`,
     usage: "[clear]",
     aliases: ["notifs"],
     file: __filename,

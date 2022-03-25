@@ -19,7 +19,7 @@ module.exports = {
             functions.writeJSON("groups", message.channel.id, array, `file[path]["coOwners"] = data`)
 
             message.reply(`${target.username} is now a co-owner.
-            They can now use admin commands + !giveadmin/!removeadmin, !blacklist/!unblacklist and !clearsnipedata/!cleareditsnipedata.`)
+            They can now use admin commands + ${functions.configJSON.prefix}giveadmin/${functions.configJSON.prefix}removeadmin, ${functions.configJSON.prefix}blacklist/${functions.configJSON.prefix}unblacklist and ${functions.configJSON.prefix}clearsnipedata/${functions.configJSON.prefix}cleareditsnipedata.`)
         } else {
             message.reply(`This command requires you to @mention a user.`)
         }

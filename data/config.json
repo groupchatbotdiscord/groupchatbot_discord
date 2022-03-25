@@ -2,10 +2,11 @@
 	"token": "YOUR TOKEN HERE",
 	"email": "YOUR EMAIL HERE",
 	"password": "YOUR PASSWORD HERE",
-	"discordServerLink": "YOUR DISCORD SERVER INVITE URL HERE",
 	"owners": [
 		"YOUR MAIN ACCOUNT ID HERE"
 	],
+	"prefix": "!",
+	"discordServerLink": "YOUR DISCORD SERVER INVITE URL HERE",
 	"websiteUrl": "YOUR NGROK WEBSITE URL HERE",
 	"spotifyClientId": "YOUR SPOTIFY CLIENT ID HERE",
 	"spotifyClientSecret": "YOUR SPOTIFY CLIENT SECRET HERE",

@@ -21,10 +21,10 @@ module.exports = {
             message.reply(`You need to @mention a user to use this command.
 
             **Usage**
-            !removeadmin <@user>
+            ${functions.configJSON.prefix}removeadmin <@user>
 
             **Example**
-            !removeadmin ${message.author}`)
+            ${functions.configJSON.prefix}removeadmin ${message.author}`)
         }
     }
 }

@@ -1,4 +1,5 @@
 const morse = require("morse-decoder")
+const functions = require("../functions")
 
 module.exports = {
     name: "morse",
@@ -6,8 +7,8 @@ module.exports = {
     usage: "<encode/decode> <text/morse>",
     aliases: [],
     file: __filename,
-    example: `!morse encode test
-    !morse decode - . ... -`,
+    example: `${functions.configJSON.prefix}morse encode test
+    ${functions.configJSON.prefix}morse decode - . ... -`,
     async execute(client, message, args, argsArray) {
         if (argsArray[0] && argsArray[1]) {
             const decodeOrEncode = argsArray.shift().toLowerCase()
@@ -27,18 +28,18 @@ module.exports = {
             } else {
                 message.reply(`Invalid type.
 
-                **Usage**: !morse <encode/decode> <text/morse>
+                **Usage**: ${functions.configJSON.prefix}morse <encode/decode> <text/morse>
 
-                **Example**: !morse encode test
-                !morse decode - . ... -`)
+                **Example**: ${functions.configJSON.prefix}morse encode test
+                ${functions.configJSON.prefix}morse decode - . ... -`)
             }
         } else {
             message.reply(`You need at least 2 parameters to use this command.
 
-            **Usage**: !morse <encode/decode> <text/morse>
+            **Usage**: ${functions.configJSON.prefix}morse <encode/decode> <text/morse>
 
-            **Example**: !morse encode test
-            !morse decode - . ... -`)
+            **Example**: ${functions.configJSON.prefix}morse encode test
+            ${functions.configJSON.prefix}morse decode - . ... -`)
         }
     }
 }

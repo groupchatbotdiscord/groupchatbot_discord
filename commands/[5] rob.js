@@ -193,10 +193,10 @@ module.exports = {
             message.reply(`You need to @mention a user to use this command.
 
             **Usage**
-            !rob <@user>
+            ${functions.configJSON.prefix}rob <@user>
 
             **Example**
-            !rob ${message.author}`)
+            ${functions.configJSON.prefix}rob ${message.author}`)
 
             if (this.cooldown) {
                 let now = Date.now() - (this.cooldown * 1000 - 5000)

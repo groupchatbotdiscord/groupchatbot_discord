@@ -1,4 +1,5 @@
 const fetch = require("node-fetch")
+const functions = require("../functions")
 
 module.exports = {
     name: "steam",
@@ -125,10 +126,10 @@ module.exports = {
             message.reply(`This command requires 1 parameter.
 
             **Usage**
-            !steam <gameName>
+            ${functions.configJSON.prefix}steam <gameName>
 
             **Example**
-            !steam Terraria`)
+            ${functions.configJSON.prefix}steam Terraria`)
         }
     }
 }

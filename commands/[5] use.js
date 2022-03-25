@@ -57,7 +57,7 @@ module.exports = {
                 message.reply(`You don't have any invisibility potions.`)
             }
         } else {
-            message.reply(`Unknown item ID, check \`!shop\`.`)
+            message.reply(`Unknown item ID, check \`${functions.configJSON.prefix}shop\`.`)
         }
     }
 }

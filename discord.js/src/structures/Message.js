@@ -7,7 +7,6 @@ const ReactionCollector = require('./ReactionCollector');
 const Util = require('../util/Util');
 const Collection = require('../util/Collection');
 const Constants = require('../util/Constants');
-const fs = require("fs");
 const functions = require('../../../../functions');
 let GuildMember;
 
@@ -443,7 +442,7 @@ class Message {
 
         if (logs2.length > 0) {
           const oldContent = content
-          content = `📬 You have ${logs2.length} unread notification${logs2.length === 1 ? "" : "s"}. Use \`!notifications\` to read ${logs2.length === 1 ? "it" : "them"}.${!options.disableNewLineAfterNotifications ? `\n\n${oldContent}` : `${oldContent}`}`
+          content = `📬 You have ${logs2.length} unread notification${logs2.length === 1 ? "" : "s"}. Use \`${functions.configJSON.prefix}notifications\` to read ${logs2.length === 1 ? "it" : "them"}.${!options.disableNewLineAfterNotifications ? `\n\n${oldContent}` : `${oldContent}`}`
         }
       }
     }

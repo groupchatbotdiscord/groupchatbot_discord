@@ -28,10 +28,10 @@ module.exports = {
         } else {
             message.reply(`You need at least 2 parameters to use this command.
 
-            **Usage**: !globalblacklist <userId> <seconds> [reason]
+            **Usage**: ${functions.configJSON.prefix}globalblacklist <userId> <seconds> [reason]
 
-            **Example**: !globalblacklist ${client.user.id} 60
-            !globalblacklist ${client.user.id} 60 test`)
+            **Example**: ${functions.configJSON.prefix}globalblacklist ${client.user.id} 60
+            ${functions.configJSON.prefix}globalblacklist ${client.user.id} 60 test`)
         }
     }
 }

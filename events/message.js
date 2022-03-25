@@ -22,7 +22,7 @@ module.exports = {
         const whitelisted = [...functions.configJSON.owners]
         whitelisted.push(client.user.id)
 
-        if (message.content.startsWith("!") && [...new Set(message.content.split(""))].join("") !== "!") {
+        if (message.content.startsWith(functions.configJSON.prefix) && [...new Set(message.content.split(""))].join("") !== functions.configJSON.prefix) {
             const splitArray = message.content.split("&&")
 
             if (splitArray.length > 5) splitArray.length = 5
@@ -31,7 +31,7 @@ module.exports = {
                 setTimeout(async _ => {
                     text = text.trim()
 
-                    const argsArray = text.slice(1).split(/ +/)
+                    const argsArray = text.slice(functions.configJSON.prefix.length).split(/ +/)
                     const commandName = argsArray.shift().toLowerCase()
                     let args = argsArray.join(" ")
 
@@ -203,7 +203,7 @@ module.exports = {
                         }
                     } else {
                         return message.reply(`${commandName} is not a valid command.
-                        Check \`!help\` for a list of commands.`)
+                        Check \`${functions.configJSON.prefix}help\` for a list of commands.`)
                     }
                 }, 100 * index)
             })
@@ -226,7 +226,7 @@ module.exports = {
                                     const reaction = collected.first()
                                     switch (reaction.emoji.name) {
                                         case "⏱️": {
-                                            message.content = `!afk ${userData.afk_reason}`
+                                            message.content = `${functions.configJSON.prefix}afk ${userData.afk_reason}`
                                             client.emit("message", message)
                                             message2.delete()
                                             break
@@ -353,7 +353,7 @@ module.exports = {
 
                             • To get a placement you need to type the code in the attached image.
                             • The code is case sensitive.
-                            • Group owners, group co-owners & group admins can disable rare events in \`!groupsettings\`.`, {
+                            • Group owners, group co-owners & group admins can disable rare events in \`${functions.configJSON.prefix}groupsettings\`.`, {
                             files: [
                                 {
                                     attachment: bufferOne,
@@ -397,7 +397,7 @@ module.exports = {
 
                                     • To get a placement you need to type the code in the attached image.
                                     • The code is case sensitive.
-                                    • Group owners, group co-owners & group admins can disable rare events in \`!groupsettings\`.`
+                                    • Group owners, group co-owners & group admins can disable rare events in \`${functions.configJSON.prefix}groupsettings\`.`
 
                                 if (collector.collected.size === 1) {
                                     currentPassphrase = passphraseTwo

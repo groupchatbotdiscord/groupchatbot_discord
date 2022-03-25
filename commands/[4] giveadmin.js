@@ -19,15 +19,15 @@ module.exports = {
             functions.writeJSON("groups", message.channel.id, array, `file[path]["admins"] = data`)
 
             message.reply(`${target.username} is now an admin.
-            They can now use !groupsettings, !lockname/!unlockname and !snipelogs/!editsnipelogs.`)
+            They can now use ${functions.configJSON.prefix}groupsettings, ${functions.configJSON.prefix}lockname/${functions.configJSON.prefix}unlockname and ${functions.configJSON.prefix}snipelogs/${functions.configJSON.prefix}editsnipelogs.`)
         } else {
             message.reply(`This command requires you to @mention a user.
 
             **Usage**
-            !giveadmin <@user>
+            ${functions.configJSON.prefix}giveadmin <@user>
 
             **Example**
-            !giveadmin ${message.author}`)
+            ${functions.configJSON.prefix}giveadmin ${message.author}`)
         }
     }
 }

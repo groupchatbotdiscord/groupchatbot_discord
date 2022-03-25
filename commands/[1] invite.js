@@ -9,6 +9,6 @@ module.exports = {
     async execute(client, message, args, argsArray, target) {
         message.reply(`${functions.configJSON.discordServerLink}
 
-        • To add the bot to groups type \`!sendfriendrequest\`.`)
+        • To add the bot to groups type \`${functions.configJSON.prefix}sendfriendrequest\`.`)
     }
 }

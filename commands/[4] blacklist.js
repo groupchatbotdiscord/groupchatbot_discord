@@ -38,13 +38,13 @@ module.exports = {
             message.reply(`You need at least 2 parameters to use this command.
 
             **Usage**
-            !blacklist <@user> <seconds/perm> [reason]
+            ${functions.configJSON.prefix}blacklist <@user> <seconds/perm> [reason]
 
             **Example**
-            !blacklist ${message.author} 60
-            !blacklist ${message.author} 60 test
-            !blacklist ${message.author} perm
-            !blacklist ${message.author} perm test`)
+            ${functions.configJSON.prefix}blacklist ${message.author} 60
+            ${functions.configJSON.prefix}blacklist ${message.author} 60 test
+            ${functions.configJSON.prefix}blacklist ${message.author} perm
+            ${functions.configJSON.prefix}blacklist ${message.author} perm test`)
         }
     }
 }

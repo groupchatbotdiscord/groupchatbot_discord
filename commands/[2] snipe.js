@@ -7,7 +7,7 @@ module.exports = {
     aliases: ["s", "4k"],
     file: __filename,
     async execute(client, message, args, argsArray, target) {
-        if (functions.readJSON("groups")[message.channel.id].snipe === false) return message.reply(`Sniping has been disabled via !groupsettings.`)
+        if (functions.readJSON("groups")[message.channel.id].snipe === false) return message.reply(`Sniping has been disabled via ${functions.configJSON.prefix}groupsettings.`)
 
         const groupSnipeData = functions.readJSON("groups").snipeData[message.channel.id]
 

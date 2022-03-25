@@ -31,7 +31,7 @@ module.exports = {
                 await functions.removeFromWallet(message.author.id, shop.padlock.price * amount)
 
                 message.reply(`You have bought ${amount} **${shop.padlock.name}**.
-                To use a padlock type \`!use padlock\`.`)
+                To use a padlock type \`${functions.configJSON.prefix}use padlock\`.`)
             } else {
                 message.reply(`You don't have enough money in total.
                 You need £${shop.padlock.price * amount} to buy ${amount} **${shop.padlock.name}**.`)
@@ -44,13 +44,13 @@ module.exports = {
                 await functions.removeFromWallet(message.author.id, shop.invisibilityPotion.price * amount)
 
                 message.reply(`You have bought ${amount} **${shop.invisibilityPotion.name}**.
-                To use an invisibility potion type \`!use invisibilityPotion\`/\`!use ip\`.`)
+                To use an invisibility potion type \`${functions.configJSON.prefix}use invisibilityPotion\`/\`${functions.configJSON.prefix}use ip\`.`)
             } else {
                 message.reply(`You don't have enough money in total.
                 You need £${shop.invisibilityPotion.price * amount} to buy ${amount} **${shop.invisibilityPotion.name}**.`)
             }
         } else {
-            message.reply("Unknown item ID, check `!shop`.")
+            message.reply(`Unknown item ID, check \`${functions.configJSON.prefix}shop\`.`)
         }
     }
 }

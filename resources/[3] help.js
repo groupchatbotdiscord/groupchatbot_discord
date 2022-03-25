@@ -1,4 +1,5 @@
 const fs = require("fs")
+const functions = require("../functions")
 const maxPages = 5
 
 function getPage(message, currentPage) {
@@ -14,7 +15,7 @@ function getPage(message, currentPage) {
         if (file.startsWith(`[${currentPage}]`)) {
             const command = require(`./${file}`)
 
-            const aliases = [...command.aliases].map(element => `\`!${element}\``)
+            const aliases = [...command.aliases].map(element => `\`${functions.configJSON.prefix}${element}\``)
 
             let permission = "Everyone"
 
@@ -39,7 +40,7 @@ function getPage(message, currentPage) {
                     break
             }
 
-            description2 += `**!${command.name}${command.usage ? ` ${command.usage}` : ""}**
+            description2 += `**${functions.configJSON.prefix}${command.name}${command.usage ? ` ${command.usage}` : ""}**
             ${command.description}${command.aliases.length > 0 ? `
             Aliases: ${aliases.join(", ")}` : ""}
             Permission: ${permission}\n\n`
@@ -103,7 +104,7 @@ module.exports = {
             await message2.react(end)
         } else {
             message.reply(`You're not friends with the bot.
-            Please use \`!sendfriendrequest\` to receive DMs from the bot.`)
+            Please use \`${functions.configJSON.prefix}sendfriendrequest\` to receive DMs from the bot.`)
         }
     }
 }

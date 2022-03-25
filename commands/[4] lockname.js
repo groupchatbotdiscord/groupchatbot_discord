@@ -25,10 +25,10 @@ module.exports = {
             message.reply(`You need to provide one parameter to use this command.
 
             **Usage**
-            !lockname <name>
+            ${functions.configJSON.prefix}lockname <name>
 
             **Example**
-            !lockname !lockname testing`)
+            ${functions.configJSON.prefix}lockname test`)
         }
     }
 }

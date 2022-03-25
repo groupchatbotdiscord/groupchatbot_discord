@@ -12,12 +12,12 @@ function getMenu(message, userData) {
     ${passive === true ? "✅" : "❌"} \`${passive === true ? "Enabled" : "Disabled"}\`
 
     **Show Username On Global Leaderboard** - ID: \`showusernameongloballeaderboard\`, \`suogl\`
-    Allows users to see your username on \`!leaderboard global\`.
+    Allows users to see your username on \`${functions.configJSON.prefix}leaderboard global\`.
     ${showUsernameOnGlobalLeaderboard === true ? "✅" : "❌"} \`${showUsernameOnGlobalLeaderboard === true ? "Enabled" : "Disabled"}\`
 
-    • To change a setting type \`!usersettings [ID] [value]\`.
-    • To reset all settings back to their default value type \`!usersettings reset\`.
-    • Example: \`!usersettings passive enable\`.`
+    • To change a setting type \`${functions.configJSON.prefix}usersettings [ID] [value]\`.
+    • To reset all settings back to their default value type \`${functions.configJSON.prefix}usersettings reset\`.
+    • Example: \`${functions.configJSON.prefix}usersettings passive enable\`.`
 }
 
 function isValidValue(value = "") {

@@ -78,9 +78,9 @@ module.exports = {
         } else {
             message.reply(`This command requires 2 parameters.
 
-            **Usage**: !pay <@user> <amount to give>
+            **Usage**: ${functions.configJSON.prefix}pay <@user> <amount to give>
 
-            **Example**: !pay ${message.author} 100`)
+            **Example**: ${functions.configJSON.prefix}pay ${message.author} 100`)
 
             if (this.cooldown) {
                 let now = Date.now() - (this.cooldown * 1000 - 5000)

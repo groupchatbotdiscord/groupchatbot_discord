@@ -136,7 +136,7 @@ module.exports = {
                 delete require.cache[require.resolve(`./commands/${commandName}`)]
                 const command = require(`./commands/${commandName}`)
 
-                const aliases = [...command.aliases].map(element => `!${element}`)
+                const aliases = [...command.aliases].map(element => `${this.configJSON.prefix}${element}`)
 
                 const description = []
 
@@ -167,7 +167,7 @@ module.exports = {
 
                 info.push({
                     name: command.name,
-                    title: `!${command.name}${command.usage ? ` ${command.usage}` : ""}`,
+                    title: `${this.configJSON.prefix}${command.name}${command.usage ? ` ${command.usage}` : ""}`,
                     description: description.join("\n\n").replace(/^ +/gm, ""),
                     aliases: aliases.join(", ") || "None",
                     category: commandName.slice(0, 3).replace("[", "").replace("]", ""),

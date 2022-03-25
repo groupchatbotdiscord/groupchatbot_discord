@@ -315,9 +315,9 @@ module.exports = {
         } else {
             message.reply(`You need 1 parameter to use this command.
 
-                    **Usage**: !objection <numberOfMessages>
+                    **Usage**: ${functions.configJSON.prefix}objection <numberOfMessages>
 
-                    **Example**: !objection 100`)
+                    **Example**: ${functions.configJSON.prefix}objection 100`)
 
             if (this.cooldown) {
                 let now = Date.now() - (this.cooldown * 1000 - 5000)
