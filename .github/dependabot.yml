@@ -10,5 +10,7 @@ updates:
     schedule:
       interval: "daily"
     ignore:
+      # Discord.JS updates are ignored due to Discord.JS v11 being the last version to officially support userbots
       - dependency-name: "discord.js"
+      # node-fetch updates are ignored due to the devs converting it to an ESM only module as of node-fetch 3.x
       - dependency-name: "node-fetch"
