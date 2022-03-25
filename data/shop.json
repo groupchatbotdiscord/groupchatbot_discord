@@ -1,0 +1,29 @@
+{
+    "padlock": {
+        "name": "Padlock",
+        "price": 1000,
+        "description": "Padlocks prevent you from being robbed.\nPadlocks automatically break after 1 month.",
+        "ids": [
+            "padlock",
+            "lock"
+        ]
+    },
+    "invisibilityPotion": {
+        "name": "Invisibility Potion",
+        "price": 5000,
+        "description": "Invisibility potions drastically increases your chance of robbing someone.\nInvisibility potions automatically wear off after a day.",
+        "ids": [
+            "invisibility_potion",
+            "ip"
+        ]
+    },
+    "lockpick": {
+        "name": "Lockpick (Coming Soon)",
+        "price": 5000,
+        "description": "Lockpicks have a chance of breaking a users padlock.\nLockpicks can only be used once.",
+        "ids": [
+            "lockpick",
+            "lp"
+        ]
+    }
+}

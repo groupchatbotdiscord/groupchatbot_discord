@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<head>
+    <meta property="og:site_name" content="Group Chat Bot">
+    <meta property="og:title" content="Group Chat Bot Commands">
+    <meta property="og:description" content="View a list of the Group Chat Bot commands online.">
+    <meta name="theme-color" content="#2F3136">
+</head>
+
+<title>Group Chat Bot Commands</title>
+
+<style>
+    @font-face {
+        font-family: Whitney;
+        src: url(/static/Whitney) format("woff");
+    }
+
+    body {
+        overflow-y: scroll;
+        background-color: #36393f;
+    }
+
+    .card {
+        background-color: #202225;
+        cursor: pointer;
+    }
+
+    .card-header {
+        color: #fff;
+        border-bottom-color: rgba(140, 130, 115, 0.13);
+    }
+
+    .card-body {
+        white-space: pre-wrap;
+        color: #fff;
+        padding: 1rem 0rem 0rem 1.25rem;
+    }
+
+    .field {
+        padding: 1rem 0rem 0rem 1.25rem;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .field-body {
+        padding: 0rem 0rem 1rem 0rem;
+        color: #fff;
+        font-weight: normal;
+    }
+
+    noscript {
+        color: #fff;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    * {
+        user-select: none;
+    }
+
+    .item {
+        flex-shrink: 0;
+        font-family: Whitney;
+        font-weight: 500;
+        position: relative;
+        font-size: 16px;
+        line-height: 20px;
+        color: #B9BBBE;
+    }
+
+    .tabs {
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .tabs .item {
+        border-radius: 4px;
+        margin: 0 8px;
+        padding: 2px 8px;
+    }
+
+    .tab_content {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .item:hover,
+    [active="true"] {
+        border-radius: 4px;
+        color: #DCDDDE;
+        background-color: rgba(79, 84, 92, 0.32);
+        cursor: pointer;
+    }
+
+    .footer {
+        color: #fff;
+        width: fit-content;
+        margin: 0 auto;
+    }
+</style>
+
+<br>
+
+<div class="container">
+    <div class="tabs" id="tabs">
+        <div class="item" onclick="open_tab(this)" active="true">General</div>
+        <div class="item" onclick="open_tab(this)">Snipe</div>
+        <div class="item" onclick="open_tab(this)">Info</div>
+        <div class="item" onclick="open_tab(this)">Settings</div>
+        <div class="item" onclick="open_tab(this)">Currency</div>
+    </div>
+
+    <br>
+
+    <div class="tab_content active" id="General" c="1">
+        <div class="container"></div>
+    </div>
+
+    <div class="tab_content" id="Snipe" c="2">
+        <div class="container"></div>
+    </div>
+
+    <div class="tab_content" id="Info" c="3">
+        <div class="container"></div>
+    </div>
+
+    <div class="tab_content" id="Settings" c="4">
+        <div class="container"></div>
+    </div>
+
+    <div class="tab_content" id="Currency" c="5">
+        <div class="container"></div>
+    </div>
+
+    <div class="footer">
+        [] = Optional
+        <br>
+        <> = Required
+            <br>
+            Click on a command box to view a command in detail
+    </div>
+</div>
+
+<br>
+
+<script>
+    function add_command(command, index) {
+        const tab_content = document.querySelector(`[c="${command.category}"]`)
+
+        const element = document.createElement("div")
+        element.classList.add("card")
+        element.setAttribute("command", command.name)
+        element.setAttribute("data-toggle", "collapse")
+        element.setAttribute("href", `#c${index}`)
+
+        const collapse_element = document.createElement("div")
+        collapse_element.setAttribute("id", `c${index}`)
+        collapse_element.classList.add("collapse")
+
+        const header_element = document.createElement("div")
+        header_element.classList.add("card-header")
+
+        const body_element = document.createElement("div")
+        body_element.classList.add("card-body")
+
+        const fields = document.createElement("div")
+        fields.classList.add("field")
+        fields.textContent = "Aliases"
+
+        const aliases_body_element = document.createElement("div")
+        aliases_body_element.classList.add("field-body")
+
+        const permission_body_element = document.createElement("div")
+        permission_body_element.classList.add("field-body")
+
+        const line_break = document.createElement("br")
+
+        element.appendChild(header_element)
+
+        element.appendChild(collapse_element)
+
+        collapse_element.appendChild(body_element)
+
+        fields.appendChild(aliases_body_element)
+
+        fields.innerHTML += "Permission"
+
+        fields.appendChild(permission_body_element)
+
+        collapse_element.appendChild(fields)
+
+        tab_content.children[0].appendChild(element)
+        tab_content.children[0].appendChild(line_break)
+    }
+
+    function open_tab(element) {
+        document.getElementById("tabs").querySelector("[active='true']").removeAttribute("active")
+
+        const list = document.getElementsByClassName("active")
+
+        for (let item of list) {
+            item.classList.remove("active")
+        }
+
+        element.setAttribute("active", "true")
+
+        const tab_name = element.innerHTML
+
+        const tab_content = document.getElementById(tab_name)
+
+        tab_content.classList.add("active")
+    }
+
+    const xhr = new XMLHttpRequest()
+    xhr.open("get", "/api/get_command_info", true)
+    xhr.onload = _ => {
+        const array = JSON.parse(xhr.responseText)
+
+        array.forEach((command, index) => {
+            add_command(command, index)
+
+            const card = document.querySelector(`[command="${command.name}"]`)
+
+            const children = card.children
+
+            const header = children[0]
+            const body = children[1].children[0]
+            const field_body_aliases = children[1].children[1].children[0]
+            const field_body_permission = children[1].children[1].children[1]
+
+            header.textContent = command.title
+            body.textContent = command.description
+
+            field_body_aliases.textContent = command.aliases
+            field_body_permission.textContent = command.permission
+        })
+    }
+    xhr.send()
+</script>
+
+<noscript>
+    <style>
+        div {
+            display: none;
+        }
+    </style>
+    This page requires JavaScript enabled to function.
+</noscript>

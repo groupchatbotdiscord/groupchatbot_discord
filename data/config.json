@@ -1,0 +1,763 @@
+{
+	"token": "YOUR TOKEN HERE",
+	"email": "YOUR EMAIL HERE",
+	"password": "YOUR PASSWORD HERE",
+	"discordServerLink": "YOUR DISCORD SERVER INVITE URL HERE",
+	"owners": [
+		"YOUR MAIN ACCOUNT ID HERE"
+	],
+	"websiteUrl": "YOUR NGROK WEBSITE URL HERE",
+	"spotifyClientId": "YOUR SPOTIFY CLIENT ID HERE",
+	"spotifyClientSecret": "YOUR SPOTIFY CLIENT SECRET HERE",
+	"defaultArgs": [
+		"--start-maximized",
+		"--aggressive-cache-discard",
+		"--disable-cache",
+		"--disable-application-cache",
+		"--disable-offline-load-stale-cache",
+		"--disable-gpu-shader-disk-cache",
+		"--media-cache-size=0",
+		"--disk-cache-size=0",
+		"--no-sandbox",
+		"--disable-dev-shm-usage",
+		"--disable-web-security",
+		"--disable-features=IsolateOrigins",
+		"--disable-site-isolation-trials",
+		"--disable-extensions",
+		"--disable-component-extensions-with-background-pages",
+		"--disable-default-apps",
+		"--no-default-browser-check",
+		"--autoplay-policy=user-gesture-required",
+		"--disable-background-timer-throttling",
+		"--disable-backgrounding-occluded-windows",
+		"--disable-notifications",
+		"--disable-background-networking",
+		"--disable-breakpad",
+		"--disable-component-update",
+		"--disable-domain-reliability",
+		"--disable-sync",
+		"--single-process",
+		"--no-zygote"
+	],
+	"objection": {
+		"music": {
+			"allegro2001": "[#bgm1]",
+			"cornered": "[#bgm4]",
+			"cornered_variation": "[#bgm75]",
+			"cornered2002": "[#bgm66]",
+			"cornered2002_variation": "[#bgm744]",
+			"objection": "[#bgm14]",
+			"suspense": "[#bgm65]"
+		},
+		"poses": {
+			"apollo_justice": {
+				"confident": 55,
+				"cornered": 62,
+				"damage": 404,
+				"desk_slam": 57,
+				"point": 61,
+				"read": 58,
+				"silly": 403,
+				"silly_eyes_closed": 56,
+				"smile": 402,
+				"stand": 60,
+				"think": 63,
+				"think_eyes_closed": 415,
+				"yell": 416
+			},
+			"mia_fey": {
+				"confident": 18,
+				"cornered": 39,
+				"damage": 244,
+				"desk_slam": 16,
+				"point": 17,
+				"stand": 15,
+				"think": 38,
+				"yell": 273
+			},
+			"phoenix_wright": {
+				"breakdown": 140,
+				"coffee_stained": 188,
+				"confident": 4,
+				"cornered": 34,
+				"damage": 129,
+				"desk_slam": 2,
+				"hair_stained": 358,
+				"headshake": 101,
+				"nod": 100,
+				"point": 3,
+				"read": 59,
+				"silly": 35,
+				"sip_mug": 76,
+				"stand": 1,
+				"super_objection": 519,
+				"think": 33,
+				"yell": 271
+			},
+			"franziska_von_karma": {
+				"arms_crossed": 24,
+				"bow": 193,
+				"confident": 22,
+				"cornered": 41,
+				"damage": 192,
+				"desk_slam": 23,
+				"point": 25,
+				"stand": 21,
+				"whip_desk": 26,
+				"yell": 274
+			},
+			"godot": {
+				"confident": 180,
+				"confident_with_mug": 181,
+				"cornered": 179,
+				"damage": 218,
+				"desk_slam": 174,
+				"desk_slam_with_mug": 173,
+				"mask_explosion": 520,
+				"mug_sip": 184,
+				"new_mug_sip": 176,
+				"point": 178,
+				"point_with_mug": 177,
+				"stand": 175,
+				"think": 182,
+				"throw_mug": 219,
+				"yell": 275
+			},
+			"klavier_gavin": {
+				"air_guitar": 69,
+				"cornered": 64,
+				"cornered2": 745,
+				"damage": 401,
+				"laugh": 68,
+				"look_up": 70,
+				"point": 66,
+				"stand": 65,
+				"think": 67,
+				"wall_slam": 217,
+				"yell": 689
+			},
+			"manfred_von_karma": {
+				"arms_crossed": 29,
+				"breakdown1": 309,
+				"breakdown2": 310,
+				"confident": 28,
+				"cornered": 42,
+				"damage": 191,
+				"snap_finger": 43,
+				"stand": 27
+			},
+			"miles_edgeworth": {
+				"arms_crossed": 8,
+				"bow": 189,
+				"confident_shrug": 9,
+				"confident_smirk": 47,
+				"cornered": 36,
+				"damage": 90,
+				"desk_slam": 6,
+				"point": 7,
+				"read": 89,
+				"smirk": 185,
+				"stand": 5,
+				"yell": 272
+			},
+			"winston_payne": {
+				"confident": 20,
+				"cornered": 40,
+				"damage": 190,
+				"stand": 19
+			},
+			"judges_brother": {
+				"eyes_closed": 187,
+				"headshake": 605,
+				"negative": 126,
+				"positive": 128,
+				"stand": 125,
+				"surprised": 127
+			},
+			"judge": {
+				"eyes_closed": 186,
+				"headshake": 604,
+				"negative": 31,
+				"positive": 44,
+				"stand": 30,
+				"surprised": 32
+			},
+			"acro": {
+				"cry": 326,
+				"sad": 323,
+				"serious": 324,
+				"smile": 325,
+				"stand": 322
+			},
+			"adrian_andrews": {
+				"broken": 559,
+				"cornered": 558,
+				"damage": 557,
+				"happy": 555,
+				"read": 551,
+				"sad": 556,
+				"serious": 552,
+				"stand": 550,
+				"surprised": 554,
+				"think": 553
+			},
+			"angel_starr": {
+				"angry": 424,
+				"confident": 421,
+				"cornered": 423,
+				"damage": 425,
+				"give": 420,
+				"happy": 422,
+				"stand": 419
+			},
+			"april_may": {
+				"angry": 320,
+				"angry_look_away": 321,
+				"angry_stare": 481,
+				"annoyed": 318,
+				"cry": 317,
+				"rage": 319,
+				"scared": 316,
+				"stand": 313,
+				"think": 315,
+				"wink": 314
+			},
+			"bellboy": {
+				"shy": 549,
+				"stand": 548
+			},
+			"benjamin_and_trilo": {
+				"angry": 637,
+				"confident": 635,
+				"damage": 640,
+				"look_away": 636,
+				"stand": 633,
+				"stand_with_trilo": 634,
+				"trilo_punch": 638,
+				"trilo_punch2": 639
+			},
+			"bikini": {
+				"happy": 645,
+				"laugh": 643,
+				"laugh2": 644,
+				"sad": 647,
+				"scared": 648,
+				"serious": 646,
+				"stand": 641,
+				"think": 642
+			},
+			"cody_hackins": {
+				"angry": 283,
+				"annoyed": 277,
+				"confident": 282,
+				"cry": 280,
+				"crying": 281,
+				"happy": 284,
+				"sad": 279,
+				"stand": 276,
+				"surprised": 278
+			},
+			"dahlia_hawthorne": {
+				"angry": 172,
+				"cry": 166,
+				"damage": 171,
+				"hair_play": 169,
+				"happy": 165,
+				"look_away": 170,
+				"nervous": 167,
+				"stand": 164,
+				"uncertain": 168
+			},
+			"damon_gant": {
+				"breakdown1": 311,
+				"breakdown2": 312,
+				"clap": 94,
+				"cornered": 98,
+				"damage": 99,
+				"impatient": 97,
+				"smile": 93,
+				"smirking": 96,
+				"stand": 92,
+				"stand_eyes_closed": 749,
+				"wondering": 95
+			},
+			"daryan_crescend": {
+				"angry": 739,
+				"arms_crossed": 737,
+				"breakdown": 743,
+				"broken": 744,
+				"cornered": 742,
+				"damage": 740,
+				"damage2": 741,
+				"hair_play": 738,
+				"laugh": 736,
+				"stand": 734,
+				"surprised": 735
+			},
+			"dee_vasquez": {
+				"breakdown": 433,
+				"confident": 427,
+				"cornered": 430,
+				"damage": 431,
+				"eyes_closed": 429,
+				"happy": 428,
+				"stand": 426,
+				"surprised": 432
+			},
+			"desirée_delite": {
+				"cornered": 651,
+				"happy": 683,
+				"smile": 652,
+				"stand": 649,
+				"think": 650
+			},
+			"dick_gumshoe": {
+				"angry": 136,
+				"confident": 131,
+				"giggle": 132,
+				"headscratch": 137,
+				"pumped": 133,
+				"sad": 134,
+				"stand": 130,
+				"stare": 135
+			},
+			"director_hotti": {
+				"crazy": 674,
+				"stand": 672,
+				"whisper": 673
+			},
+			"drew_misham": {
+				"cornered": 657,
+				"sad": 658,
+				"stand": 655,
+				"think": 656
+			},
+			"elise_deauxnim": {
+				"happy": 679,
+				"stand": 678
+			},
+			"ema_skye": {
+				"angry": 149,
+				"confident": 144,
+				"determined": 150,
+				"happy": 143,
+				"reminiscence": 151,
+				"scared": 684,
+				"stand": 142,
+				"surprised": 146,
+				"think": 145,
+				"worried": 147,
+				"write": 148
+			},
+			"frank_sahwit": {
+				"angry": 74,
+				"breakdown": 400,
+				"cornered": 75,
+				"damage": 73,
+				"nervous": 72,
+				"stand": 71,
+				"throw": 399
+			},
+			"furio_tigre": {
+				"angry": 287,
+				"breakdown1": 292,
+				"breakdown2": 293,
+				"compliant": 288,
+				"cornered": 290,
+				"roar": 289,
+				"shameless": 286,
+				"simper": 291,
+				"stand": 285
+			},
+			"guy_eldoon": {
+				"cornered": 664,
+				"eyes_closed": 661,
+				"forceful": 660,
+				"harmonica": 662,
+				"hat_off": 666,
+				"hat_on": 665,
+				"serious": 667,
+				"slump": 663,
+				"stand": 659
+			},
+			"ini_miney": {
+				"angry": 251,
+				"confident": 248,
+				"cornered": 250,
+				"damage": 249,
+				"sad": 252,
+				"silly": 247,
+				"stand": 245,
+				"think": 246
+			},
+			"iris": {
+				"angry": 270,
+				"broken": 486,
+				"cornered": 269,
+				"cry": 264,
+				"damage": 268,
+				"hair_play": 485,
+				"happy": 265,
+				"neutral": 266,
+				"smirk": 267,
+				"stand": 261,
+				"surprised": 263,
+				"uncertain": 262
+			},
+			"jake_marshall": {
+				"cornered": 161,
+				"damage": 160,
+				"drink": 155,
+				"drink_new_bottle": 154,
+				"hat_off": 156,
+				"nervous": 157,
+				"point": 153,
+				"serious": 159,
+				"shave": 162,
+				"stand": 152
+			},
+			"jean_armstrong": {
+				"cornered": 492,
+				"damage": 493,
+				"dance": 495,
+				"happy": 390,
+				"sad": 494,
+				"stand": 489,
+				"think": 491
+			},
+			"kristoph_gavin": {
+				"angry": 531,
+				"annoyed": 528,
+				"breakdown": 537,
+				"broken": 538,
+				"confident": 527,
+				"cornered": 536,
+				"damage": 529,
+				"damage2": 530,
+				"desk_slam": 533,
+				"evil": 535,
+				"glare": 534,
+				"headshake": 524,
+				"laugh": 539,
+				"mysterious": 526,
+				"smile": 525,
+				"stand": 523,
+				"uneasy": 532
+			},
+			"lana_skye": {
+				"cornered": 197,
+				"damage": 198,
+				"face_behind": 201,
+				"face_behind_movement": 202,
+				"face_front_movement": 203,
+				"face_side": 200,
+				"happy": 204,
+				"serious": 205,
+				"stand": 194,
+				"stand2": 195,
+				"stand3": 196,
+				"surprised": 199
+			},
+			"larry_butz": {
+				"cornered": 211,
+				"cry": 210,
+				"happy": 207,
+				"nervous": 212,
+				"stand": 206,
+				"surprised": 214,
+				"think": 208,
+				"think2": 209,
+				"thumbs_up": 213
+			},
+			"lisa_basil": {
+				"cornered": 677,
+				"happy": 676,
+				"stand": 675
+			},
+			"lotta_hart": {
+				"angry": 118,
+				"damage": 478,
+				"relieved": 116,
+				"silly": 115,
+				"smile": 117,
+				"stand": 113,
+				"stand2": 114,
+				"stare": 119,
+				"uncertain": 120
+			},
+			"luke_atmey": {
+				"breakdown": 243,
+				"cornered": 238,
+				"crazy": 241,
+				"damage": 239,
+				"laugh": 242,
+				"look_up": 236,
+				"magnify": 237,
+				"shine_ring": 235,
+				"stand": 234,
+				"wipe_magnifier": 240
+			},
+			"maggey_byrde": {
+				"happy": 389,
+				"pumped": 388,
+				"sad": 390,
+				"salute": 387,
+				"stand": 386
+			},
+			"marvin_grossberg": {
+				"cornered": 669,
+				"stand": 668
+			},
+			"matt_engarde": {
+				"breakdown": 260,
+				"call": 255,
+				"cornered": 259,
+				"evil": 257,
+				"laugh": 258,
+				"on_call": 256,
+				"stand": 253,
+				"uncertain": 254
+			},
+			"max_galactica": {
+				"confident": 581,
+				"cornered": 582,
+				"cry": 583,
+				"point": 580,
+				"stand": 579
+			},
+			"maya_fey": {
+				"angry": 80,
+				"anguished": 87,
+				"crying": 81,
+				"damage": 479,
+				"determined": 83,
+				"happy": 79,
+				"sad": 82,
+				"smirk": 84,
+				"stand": 77,
+				"surprised": 85,
+				"think": 78,
+				"worried": 86
+			},
+			"mike_meekins": {
+				"damage": 396,
+				"megaphone": 395,
+				"pumped": 393,
+				"sad": 397,
+				"salute": 392,
+				"stand": 391,
+				"stare": 398,
+				"think": 394
+			},
+			"moe": {
+				"angry": 577,
+				"damage": 576,
+				"dull": 574,
+				"laugh": 573,
+				"point": 575,
+				"sad": 578,
+				"stand": 572
+			},
+			"morgan_fey": {
+				"angry": 547,
+				"sad": 546,
+				"sleeve": 545,
+				"stand": 544
+			},
+			"pearl_fey": {
+				"angry": 472,
+				"cry": 477,
+				"dream": 475,
+				"happy": 473,
+				"neutral": 470,
+				"sad": 476,
+				"stand": 469,
+				"surprised": 474,
+				"worried": 471
+			},
+			"penny_nichols": {
+				"cards": 632,
+				"confident": 631,
+				"stand": 630
+			},
+			"polly": {
+				"stand": 302
+			},
+			"redd_white": {
+				"anguished": 109,
+				"arms_crossed": 110,
+				"breakdown": 112,
+				"cornered": 111,
+				"shine": 357,
+				"shrug": 108,
+				"stand": 107
+			},
+			"regina_berry": {
+				"cry": 301,
+				"happy": 296,
+				"point": 295,
+				"sad": 300,
+				"sparkle": 297,
+				"sparkle2": 298,
+				"stand": 294,
+				"think": 299
+			},
+			"richard_wellington": {
+				"angry": 373,
+				"breakdown": 378,
+				"cornered": 374,
+				"cornered2": 375,
+				"crazy": 376,
+				"damage": 377,
+				"shrug": 372,
+				"stand": 371
+			},
+			"ron_delite": {
+				"cornered": 334,
+				"sad": 333,
+				"serious": 335,
+				"shout": 336,
+				"shout2": 337,
+				"stand": 331,
+				"think": 332
+			},
+			"sal_manella": {
+				"angry": 350,
+				"cornered": 352,
+				"damage": 351,
+				"shameless": 349,
+				"stand": 347,
+				"think": 348
+			},
+			"shelly_de_killer_radio": {
+				"angry": 328,
+				"break": 330,
+				"cornered": 329,
+				"stand": 327
+			},
+			"spark_brushel": {
+				"cornered": 751,
+				"damage": 752,
+				"smile": 709,
+				"sniff": 711,
+				"stand": 708,
+				"surprised": 750,
+				"think": 710
+			},
+			"terry_fawles": {
+				"cough": 626,
+				"cough2": 627,
+				"cough_blood": 628,
+				"cry": 624,
+				"look_away": 621,
+				"nervous": 623,
+				"serious": 622,
+				"serious_bled": 629,
+				"stand": 620,
+				"yell": 625
+			},
+			"trucy_wright": {
+				"annoyed": 598,
+				"confident": 594,
+				"cry": 603,
+				"determined": 599,
+				"grin": 593,
+				"hand_in_pocket": 685,
+				"happy": 591,
+				"mr_hat_appears": 686,
+				"mr_hat_talk": 687,
+				"mr_hat_talk_trucy": 688,
+				"sad": 602,
+				"scared": 601,
+				"serious": 600,
+				"shocked": 597,
+				"silly": 595,
+				"smile": 592,
+				"stand": 589,
+				"surprised": 596,
+				"think": 590
+			},
+			"vera_misham": {
+				"bite_nail": 451,
+				"cornered": 447,
+				"damage": 448,
+				"eyes_closed": 450,
+				"happy": 445,
+				"scared": 446,
+				"sketch": 449,
+				"sketch_angry": 452,
+				"sketch_apollo": 456,
+				"sketch_happy": 453,
+				"sketch_sad": 455,
+				"sketch_surprised": 454,
+				"sketch_trucy": 457,
+				"stand": 444
+			},
+			"victor_kudo": {
+				"angry": 383,
+				"pumped": 382,
+				"shy": 384,
+				"side": 380,
+				"stand": 379,
+				"surprised": 381,
+				"throw": 385
+			},
+			"viola_cadaverini": {
+				"cry": 682,
+				"laugh": 681,
+				"stand": 680
+			},
+			"wendy_oldbag": {
+				"angry": 229,
+				"confident": 230,
+				"damage": 232,
+				"in_love": 233,
+				"stand": 228,
+				"wave": 231
+			},
+			"will_powers": {
+				"dull": 586,
+				"happy": 588,
+				"sad": 587,
+				"stand": 584,
+				"think": 585
+			},
+			"winfred_kitaki": {
+				"brows": 723,
+				"serious": 724,
+				"stand": 722
+			},
+			"wocky_kitaki": {
+				"angry": 718,
+				"cornered": 717,
+				"fight": 715,
+				"fight2": 716,
+				"happy": 719,
+				"sad": 720,
+				"serious": 721,
+				"stand": 712,
+				"stare": 713,
+				"think": 714
+			},
+			"yanni_yogi": {
+				"angry": 343,
+				"fall": 344,
+				"look_away": 340,
+				"sad": 346,
+				"serious": 345,
+				"sleep": 341,
+				"stand": 338,
+				"think": 339,
+				"wake_up": 342
+			},
+			"gallery": {
+				"talk": 216
+			}
+		},
+		"bubbles": {
+			"objection": 1,
+			"hold_it": 2,
+			"take_that": 3
+		}
+	}
+}
