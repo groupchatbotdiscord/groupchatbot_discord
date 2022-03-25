@@ -25,6 +25,8 @@ I've added an alternative **!help** (located in ./resources/) command for those 
 
 # Setup
 
+Before you begin, make sure you clone the repository ([click here to clone it](https://github.com/groupchatbotdiscord/groupchatbot_discord/archive/refs/heads/main.zip)).
+
 Create a new Discord account and get the accounts token, if you don't know how to do that [use this video](https://youtu.be/WWHZoa0SxCc?t=144).
 
 After you've got the account token go to **config.json** (located in ./data/) and replace **YOUR TOKEN HERE** with the token.
