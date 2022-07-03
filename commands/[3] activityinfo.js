@@ -28,7 +28,7 @@ module.exports = {
                     array.forEach((value, index) => {
                         description.push(`${index + 1} - ${value.name}`)
                     })
-                    const message2 = await message2.edit(description.join("\n"))
+                    message2 = await message2.edit(description.join("\n"))
                     const length = array.length
                     switch (length) {
                         case 1:
