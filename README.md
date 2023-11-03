@@ -16,7 +16,7 @@ Additionally, we no longer update this project. **You may come across issues tha
 
 Some things **do** still use JSON files as the currency system was my main target for the MongoDB system.
 
-I'm also fully aware that the code isn't clean, I've been trying to sort that out for a while.
+Keep in mind the code is not that good or clean. This was created when I was still not great at programming or code readability.
 
 For commands that use **config.json**'s **websiteUrl** property you need to have an ngrok website setup to use port 8080.  
 Example: **groupchatbot.eu.ngrok.io** (**"websiteUrl": "groupchatbot.eu.ngrok.io"**).  
