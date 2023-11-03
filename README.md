@@ -1,7 +1,7 @@
 # ⚠️ Warning ⚠️
 
 This is a userbot which **is against Discord's community guidelines**, I am not responsible for any actions Discord may take.  
-Don't use an account you value, make a new Discord account for userbots.
+Don't use an account you value, make a new Discord account for userbots.  
 Additionally, we no longer update this project. **You may come across issues that never existed before**.
 
 # Requirements
