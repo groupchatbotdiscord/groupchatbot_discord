@@ -1,3 +1,9 @@
+# ⚠️ Warning ⚠️
+
+This is a userbot which **is against Discord's community guidelines**, I am not responsible for any actions Discord may take.  
+Don't use an account you value, make a new Discord account for userbots.
+Additionally, we no longer update this project. **You may come across issues that never existed before**.
+
 # Requirements
 
 • [Node.JS v16.14.0](https://nodejs.org/download/release/v16.14.0/) - This may not be the **required** version but GCB was made on v16.14.0.  
@@ -5,11 +11,6 @@
 
 # Optional
 • [Ngrok](https://ngrok.com/download)
-
-# ⚠️ Warning ⚠️
-
-This is a userbot which **is against Discord's community guidelines**, I am not responsible for any actions Discord may take.  
-Don't use an account you value, make a new Discord account for userbots.
 
 # Info
 
